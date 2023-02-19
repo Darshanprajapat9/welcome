@@ -1,15 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script src="table.js">
-        
-    </script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
 
-</body>
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-danger" href="#">CRUD</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link text-danger" href="index.html">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-danger" href="display.php">Display</a>
+              </li>
+           
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+     <!-- End Example Code -->
+     <!--form start-->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <form action="insert.php" name="form" method="post">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Name</label>
+                     <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="enter the name">
+                   </div>
+                   <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">mobile</label>
+                     <input type="text" class="form-control" id="exampleFormControlInput1" name="mobile" placeholder="enter the contsct number">
+                   </div>
+                   <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="enter the email">
+                   </div>
+                   
+            
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">City</label>
+                 <input type="text" class="form-control" id="exampleFormControlInput1"  name="city" placeholder="enter the city">
+               </div>
+              
+              <button class="btn btn-outline-primary" type="submit" name="submit">Submit</button>
+              </form>
+        </div>
+    </div>
+  </div>
+<!--form end-->
+    </body>
 </html>
