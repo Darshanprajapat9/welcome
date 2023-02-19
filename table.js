@@ -1,4 +1,4 @@
- /*
+ 
  //print table of given number
  
  document.write("<h1>print table of given number </h1><br>");
@@ -74,7 +74,7 @@ if(original == riverse){
     document.write("it's palidrome number");
 }else{
     document.write("it's  not palidrome number");
-}*/
+}
 
 document.write("<br>");
 document.write("<h1>armstrong number </h1><br>");
